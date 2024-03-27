@@ -1,0 +1,356 @@
+:root {
+  --primary-bradn-color: #4d5ae5; /*IRIS*/
+  --pressed-state-color: #404bbf; /*OCEAN*/
+  --primary-text-color: #434455; /*SLATE*/
+  --success-valid-color: #31d0aa; /*GREEN*/
+  --second-text-color: #2e2f42; /*NAVY BLUE*/
+  --subtle-text: #8e8f99; /*LIGHT SLATE*/
+  --accent-color: #e7e9fc; /*CORNFLOWER*/
+  --light-background: #f4f4fd; /*CLOUD*/
+  --modal-overlay-color: #2e2f4266; /*NAVY BLUE MODAL*/
+  --hero-background: #2e2f42b2; /*GREY*/
+  --white-background: #ffffff; /*WHITE*/
+  --modal-background-color: #fcfcfc; /*DAIRY*/
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+img {
+  display: block;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  background-color: var(--white-background);
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* Elementy w poziomie */
+  align-items: center; /* elementy w pionie */
+}
+
+.logo {
+  color: var(--primary-bradn-color);
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.17;
+  letter-spacing: 0.54px;
+  text-transform: uppercase;
+  display: block;
+  margin-right: 76px;
+}
+
+.studio {
+  color: var(--second-text-color);
+}
+
+.main-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.menu-list {
+  display: flex;
+  margin-left: 76px;
+  gap: 40px;
+}
+
+.menu-item {
+  display: inline-block;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--second-text-color);
+  padding: 24px 0;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.menu-item:hover,
+.menu-item:focus {
+  color: var(--pressed-state-color);
+}
+
+.contact-details {
+  font-style: normal;
+}
+
+.contact-details ul {
+  display: flex;
+  gap: 40px;
+}
+
+.contact-item {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+.contact-item:hover,
+.contact-item:focus {
+  color: var(--pressed-state-color);
+}
+
+.hero-section {
+  background-color: var(--second-text-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 188px 0;
+}
+
+.hero-title {
+  color: var(--white-background);
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  max-width: 496px;
+  margin: 0 auto;
+}
+
+.hero-button {
+  background-color: var(--primary-bradn-color);
+  color: var(--white-background);
+  font-weight: 500;
+  letter-spacing: 0.64px;
+  font-family: 'Roboto', sans-serif;
+  cursor: pointer;
+  font-size: 16px;
+  line-height: 1.5;
+  display: block;
+  margin: 0 auto;
+  margin-top: 48px;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
+}
+
+.hero-button:hover,
+.hero-button:focus {
+  background-color: var(--pressed-state-color);
+}
+
+/* SEKCJA DRUGA */
+.why-us-list {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  align-items: center;
+}
+
+.why-us-section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 120px 0;
+}
+
+.why-us-item {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+  width: 264px;
+}
+
+.why-us-list-point {
+  width: calc((100% - 72px) / 4);
+}
+
+/* SEKCJA TRZECIA  */
+
+.we-do-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 120px;
+}
+.we-do-list {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  margin: 72px auto 0;
+}
+
+.we-do-list-point {
+  width: calc((100% - 48px) / 3);
+}
+
+/** SEKCJA CZWARTA **/
+
+.team-section {
+  background-color: var(--light-background);
+  padding: 120px 0;
+}
+
+.team-header {
+  font-size: 36px;
+  text-align: center;
+  font-weight: 700;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--second-text-color);
+  margin-bottom: 72px;
+}
+.team-list {
+  display: flex;
+  gap: 24px;
+}
+
+.team-card {
+  background-color: var(--white-background);
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+.name-card-container {
+  padding: 32px 0;
+  text-align: center;
+}
+
+.job-item {
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
+/** FOOTER SECTION **/
+
+.studio-footer {
+  color: var(--light-background);
+}
+
+.footer-section {
+  background-color: var(--second-text-color);
+  padding: 100px 0;
+}
+
+.footer-text {
+  color: var(--light-background);
+}
+
+.foot-link {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+/*PORTFOLIO ---------------- */
+.projects-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+.filter-button {
+  background-color: var(--light-background);
+  color: var(--primary-bradn-color);
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid var(--accent-color);
+  border-radius: 4px;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--pressed-state-color);
+  color: var(--white-background);
+  border: 1px solid transparent;
+}
+
+.list-item-title {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+  color: var(--primary-text-color);
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.projects-list-point {
+  width: calc((100% - 48px) / 3);
+}
+
+.projects-text {
+  color: var(--primary-text-color);
+}
+.projects-name-container {
+  padding: 32px 16px;
+  border: 1px solid var(--accent-color);
+  border-top: none;
+  margin-bottom: 8px;
+}
